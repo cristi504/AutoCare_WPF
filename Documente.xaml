@@ -1,0 +1,80 @@
+﻿<Window x:Class="Autocare_WPF.Documente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autocare_WPF"
+        xmlns:userControls="clr-namespace:Autocare_WPF.Header"
+        mc:Ignorable="d"
+        Title="Documente" Height="500" Width="900">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="0.4"/>
+            <Setter Property="Foreground" Value="#87CEEB"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Height" Value="48"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                     BorderBrush="{TemplateBinding BorderBrush}" 
+                     BorderThickness="{TemplateBinding BorderThickness}" 
+                     CornerRadius="10" 
+                     Padding="10">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                   VerticalAlignment="Center" 
+                                   RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <!-- Hover Effect -->
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#33FFFFFF"/>
+                    <!-- Light hover effect -->
+                    <Setter Property="Foreground" Value="#87CEEB"/>
+                    <!-- Change text color -->
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <userControls:Header x:Name="myheader" Grid.Row="0" Margin="-171,0,0,0"/>
+        <Image Source="D:\limbaje (c#)\Autocare WPF\photos\document.jpg" Stretch="UniformToFill" Grid.Row="1"/>
+
+        <ListView x:Name="DocumentListView" Margin="10,0,10,132" Background="Transparent" Foreground="White" BorderBrush="Transparent" Grid.Row="1" SelectionChanged="DocumentListView_SelectionChanged">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Document ID" DisplayMemberBinding="{Binding Path=documentID}" Width="80"/>
+                    <GridViewColumn Header="Type" DisplayMemberBinding="{Binding Path=Type}" Width="180"/>
+                    <GridViewColumn Header="Series" DisplayMemberBinding="{Binding Path=Series}" Width="180"/>
+                    <GridViewColumn Header="Issue Date" DisplayMemberBinding="{Binding Path=IssueDate}" Width="180"/>
+                    <GridViewColumn Header="Expiry Date" DisplayMemberBinding="{Binding Path=ExpiryDate}" Width="180"/>
+                    <GridViewColumn Header="Actions">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Content="See" Click="SeePhotoButton_Click" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button x:Name="update" Click="OpenUpdateWindow_Click" Content="Update Document" Margin="178,334,0,0" Grid.Row="1" HorizontalAlignment="Left"  VerticalAlignment="Top" Height="46" Width="168" Style="{StaticResource RoundedButtonStyle}" Visibility="Hidden" Foreground="Green"/>
+        <Button x:Name="adddocument" Content="Add Document" HorizontalAlignment="Center" Margin="0,335,0,0" Grid.Row="1" VerticalAlignment="Top" Height="45" Width="168" Click="adddocument_Click" Style="{StaticResource RoundedButtonStyle}"/>
+        <Button x:Name="deletedocument" Content="Delete Document" HorizontalAlignment="Left" Margin="540,335,0,0" Grid.Row="1" VerticalAlignment="Top" Height="45" Width="168" Foreground="Red" Click="deletedocument_Click" Style="{StaticResource RoundedButtonStyle}" Visibility="Hidden"/>
+       
+    </Grid>
+</Window>
+

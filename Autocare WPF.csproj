@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>Autocare_WPF</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bmw_dash.jpg" />
+    <None Remove="Header\icon.jpg" />
+    <None Remove="left-image.jpg" />
+    <None Remove="right-image.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="bmw_dash.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="left-image.jpg" />
+    <Resource Include="right-image.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="OBD.NET" Version="1.3.0" />
+    <PackageReference Include="System.Data.OleDb" Version="9.0.2" />
+  </ItemGroup>
+
+</Project>

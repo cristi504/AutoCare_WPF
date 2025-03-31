@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddCar.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddDocumentxaml.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddService.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CarConnect.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Documente.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="DoyouhaveaProblem.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Header\Headerx.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="IntervaleService.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Page1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PhotoWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="testwindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UpdateDocumentWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="StatusGeneral.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Window2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddCar.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddDocumentxaml.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddService.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CarConnect.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Documente.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="DoyouhaveaProblem.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Header\Headerx.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="IntervaleService.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Page1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PhotoWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="testwindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UpdateDocumentWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="StatusGeneral.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

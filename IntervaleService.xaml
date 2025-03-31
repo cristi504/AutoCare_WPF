@@ -1,0 +1,99 @@
+﻿<Window x:Class="Autocare_WPF.IntervaleService"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autocare_WPF"
+        xmlns:userControls="clr-namespace:Autocare_WPF.Header"
+        mc:Ignorable="d"
+        Title="IntervaleService" Height="500" Width="1000">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="0.4"/>
+            <Setter Property="Foreground" Value="#87CEEB"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Height" Value="48"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                      BorderBrush="{TemplateBinding BorderBrush}" 
+                      BorderThickness="{TemplateBinding BorderThickness}" 
+                      CornerRadius="10" 
+                      Padding="10">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                    VerticalAlignment="Center" 
+                                    RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <!-- Hover Effect -->
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#33FFFFFF"/>
+                    <!-- Light hover effect -->
+                    <Setter Property="Foreground" Value="#87CEEB"/>
+                    <!-- Change text color -->
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50">
+            </RowDefinition>
+            <RowDefinition>
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <userControls:Header x:Name="myheader" Grid.Row="0" Margin="-119,0,-40,0"/>
+        <Image Source="D:\limbaje (c#)\Autocare WPF\photos\sevice.jpg" Stretch="UniformToFill" Width="1000" Grid.Row="1" Margin="0,0,0,-1" />
+        <ComboBox x:Name="CarComboBox"
+          HorizontalAlignment="Left"
+          VerticalAlignment="Top"
+          Width="200"
+          Margin="21,33,0,0"
+          SelectionChanged="CarComboBox_SelectionChanged"
+          Grid.Row="1"
+          DisplayMemberPath="Brand"
+          SelectedValuePath="CarID">
+        </ComboBox>
+
+
+        <ListView x:Name="ServiceListView" Margin="10,70,10,76" Background="Transparent" Foreground="White" BorderBrush="Transparent" Grid.Row="1">
+            <ListView.View >
+                <GridView>
+                    <GridViewColumn Header="Oil" DisplayMemberBinding="{Binding Oil}" Width="100" />
+                    <GridViewColumn Header="Air Filter" DisplayMemberBinding="{Binding AirFilter}" Width="100" />
+                    <GridViewColumn Header="Fuel Filter" DisplayMemberBinding="{Binding FuelFilter}" Width="100"/>
+                    <GridViewColumn Header="Oil Filter" DisplayMemberBinding="{Binding OilFilter}" Width="100" />
+                    <GridViewColumn Header="Other Interventions" Width="290">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding OtherInterventions}" 
+                                   TextWrapping="Wrap" 
+                                   Width="280" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Mileage" DisplayMemberBinding="{Binding Mileage}" Width="90" />
+                    <GridViewColumn Header="Price" DisplayMemberBinding="{Binding Price}" Width="90" />
+
+                </GridView>
+
+            </ListView.View>
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+                    <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                    <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                </Style>
+            </ListView.ItemContainerStyle>
+
+        </ListView>
+        <Button Content="Add Service" Click="OpenAddServiceWindow" Margin="410,363,389,0"  Grid.Row="1"  Height="50" VerticalAlignment="Top" Style="{StaticResource RoundedButtonStyle}"/>
+    </Grid>
+</Window>

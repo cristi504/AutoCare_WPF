@@ -1,0 +1,117 @@
+﻿<Window x:Class="Autocare_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autocare_WPF"
+        xmlns:userControls="clr-namespace:Autocare_WPF.Header"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="1000">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="0.4"/>
+            <Setter Property="Foreground" Value="#87CEEB"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Height" Value="48"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            CornerRadius="10" 
+                            Padding="10">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                          VerticalAlignment="Center" 
+                                          RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <!-- Hover Effect -->
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#33FFFFFF"/>
+                    <!-- Light hover effect -->
+                    <Setter Property="Foreground" Value="#87CEEB"/>
+                    <!-- Change text color -->
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="249*"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="249*"/>
+            <RowDefinition Height="296*"/>
+        </Grid.RowDefinitions>
+        <userControls:Header x:Name="myheader" Margin="-116,0,-15,0" Grid.ColumnSpan="3"/>
+        <Rectangle Grid.Row="1" Grid.RowSpan="2" Grid.ColumnSpan="2">
+            <Rectangle.Fill>
+                <ImageBrush ImageSource="D:\limbaje (c#)\Autocare WPF\photos\mainpage.jpeg" Stretch="UniformToFill" />
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <Button x:Name="btntest" Content="test" 
+        HorizontalAlignment="Left" Margin="819,189,0,0" Grid.Row="2" 
+        VerticalAlignment="Top" Width="171" 
+        Click="btntest_Click"
+        Style="{StaticResource RoundedButtonStyle}" Visibility="Hidden"/>
+
+        <Button x:Name="btnDocumente" Content="Documente" 
+        HorizontalAlignment="Left" Margin="262,107,0,0" Grid.Row="1" 
+        VerticalAlignment="Top" Width="128" 
+        Click="btnDocumente_Click"
+        Style="{StaticResource RoundedButtonStyle}"/>
+
+        <Button x:Name="btnIntervale" Content="Intrari Service" 
+        HorizontalAlignment="Left" Margin="54,107,0,0" Grid.Row="1" 
+        VerticalAlignment="Top" Width="140" 
+        Click="btnIntervale_Click"
+        Style="{StaticResource RoundedButtonStyle}"/>
+        <Button x:Name="btnStatus" 
+          Content="STATUS GENERAL" 
+          HorizontalAlignment="Left" 
+          Grid.Row="1" 
+          VerticalAlignment="Top" 
+          RenderTransformOrigin="0.754,0.583" 
+          Height="64" 
+          Width="162" 
+          Foreground="#87CEEB" 
+          FontSize="16" 
+          FontWeight="Bold" 
+          Margin="500,99,0,0" 
+          Click="btnStatus_Click"
+          Style="{StaticResource RoundedButtonStyle}"/>
+
+
+
+        <Button x:Name="btnProblem" Content="Ai o problema?" 
+        HorizontalAlignment="Left" Margin="760,107,0,0" Grid.Row="1" 
+        VerticalAlignment="Top" Width="144" 
+        Click="btnProblem_Click"
+        Style="{StaticResource RoundedButtonStyle}"/>
+
+        <Button x:Name="btnMartori" Content="CONECTEAZA-TE LA MASINA TA"
+        HorizontalAlignment="Center" Margin="0,131,0,0" Grid.Row="2"
+        VerticalAlignment="Top" Width="264" 
+        Click="btnMartori_Click"
+        Style="{StaticResource RoundedButtonStyle}" Height="106">
+
+            <Button.Background>
+                <ImageBrush ImageSource="D:\limbaje (c#)\Autocare WPF\photos\obd.jpg"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="logout" Content="Log Out" HorizontalAlignment="Left" Margin="836,5,0,0" Grid.Row="1" VerticalAlignment="Top"  Foreground="#DC143C" Width="136" Click="Buttonlogout_Click" Style="{StaticResource RoundedButtonStyle}" Height="60"/>
+
+    </Grid>
+</Window>

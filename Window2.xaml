@@ -1,0 +1,185 @@
+﻿<Window x:Class="Autocare_WPF.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Autocare_WPF"
+        mc:Ignorable="d"
+        Title="Window2" Height="600" Width="1000">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="BorderThickness" Value="0.5"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Height" Value="48"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                        BorderBrush="{TemplateBinding BorderBrush}" 
+                        BorderThickness="{TemplateBinding BorderThickness}" 
+                        CornerRadius="10" 
+                        Padding="10">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                      VerticalAlignment="Center" 
+                                      RecognizesAccessKey="True"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <!-- Hover Effect -->
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#33FFFFFF"/>
+                    <!-- Light hover effect -->
+                    <Setter Property="Foreground" Value="White"/>
+                    <!-- Change text color -->
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Image Source="D:\limbaje (c#)\Autocare WPF\photos\bmw_dash.jpg" Stretch="UniformToFill"/>
+        <TextBlock Text="AutoCare"
+                   FontSize="50"
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Top" 
+                   Margin="0,104,0,0" Width="232">
+
+            <TextBlock.Foreground>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="white" Offset="0.0" />
+                    <GradientStop Color="#00d0c7" Offset="1.9" />
+                    <GradientStop Color="#00d0c7" Offset="1.0" />
+                </LinearGradientBrush>
+            </TextBlock.Foreground>
+        </TextBlock>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Top" Height="80" Width="296" Margin="0,424,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="20"/>
+
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="signinbtn" 
+                    Content="Sign In" 
+                    Grid.Column="0"
+                    Width="120" Height="50"
+                    Click="OpenPopupIn"
+                   
+                    FontSize="20" Margin="10,10,10,20" Grid.ColumnSpan="2"
+                    Style="{StaticResource RoundedButtonStyle}"/>
+
+            <Button x:Name="signupbtn" 
+                    Content="Sign Up" 
+                    Grid.Column="2"
+                    Width="120" Height="50"
+                    Click="OpenPopupUp"
+                   
+                    FontSize="20" Margin="26,10,-26,20"
+                    Style="{StaticResource RoundedButtonStyle}"/>
+        </Grid>
+        <Popup x:Name="SignInPopupIn" Placement="Center" StaysOpen="False" AllowsTransparency="True">
+       
+            <Grid Background="#88000000" Width="400" Height="250">
+             
+                <Border Background="White" BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="20" Padding="20">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" ShadowDepth="5" Color="Black" Opacity="0.3"/>
+                    </Border.Effect>
+                    <StackPanel Width="300">
+                        <TextBlock Text="Sign In" FontWeight="Bold" FontSize="18" Foreground="#FF3F51B5" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+
+                        <TextBlock Text="Username" Foreground="#FF757575" Margin="0,0,0,5"/>
+                        <Border Background="Transparent" BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="5" Padding="2">
+                            <TextBox x:Name="userni" Background="Transparent" BorderBrush="#FFCCCCCC" BorderThickness="0" Padding="5" TextWrapping="Wrap"  Margin="0,0,0,0"/>
+                        </Border>
+
+                        <TextBlock Text="Password" Foreground="#FF757575" Margin="0,0,0,5"/>
+                        <Border Background="Transparent" BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="5" Padding="2">
+                            <PasswordBox x:Name="pass" Background="Transparent" BorderBrush="#FFCCCCCC" BorderThickness="0" Padding="5" Margin="0,0,0,0"/>
+                        </Border>
+
+                        <Button Content="Sign In" Background="#FF3F51B5" Foreground="White" FontWeight="Bold" BorderThickness="0" Padding="10,5" Cursor="Hand" Click="SubmitSignIn" HorizontalAlignment="Center" Width="120" Margin="0,20,0,0">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="Button">
+                                                <Border Background="{TemplateBinding Background}" CornerRadius="10" Padding="{TemplateBinding Padding}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            </Popup>
+        <Popup x:Name="SignUpPopupUp" Placement="Center" StaysOpen="False" AllowsTransparency="True">
+            <Grid Background="#88000000" Width="450" Height="400">
+                <Border Background="White" BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="20" Padding="20">
+                    <Border.Effect>
+                        <DropShadowEffect BlurRadius="10" ShadowDepth="5" Color="Black" Opacity="0.3"/>
+                    </Border.Effect>
+                    <StackPanel Width="350">
+                        <TextBlock Text="Sign Up" FontWeight="Bold" FontSize="18" Foreground="#FF3F51B5" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+
+                        <TextBlock Text="Username" Foreground="#FF757575" Margin="0,0,0,5"/>
+                        <Border Background="Transparent" BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="5" Padding="2">
+                            <TextBox x:Name="UsernameUp" Background="Transparent" BorderThickness="0" Padding="5"/>
+                        </Border>
+
+                        <TextBlock Text="Password" Foreground="#FF757575" Margin="0,0,0,5"/>
+                        <Border Background="Transparent" BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="5" Padding="2">
+                            <PasswordBox x:Name="PasswordHashUp" Background="Transparent" BorderThickness="0" Padding="5"/>
+                        </Border>
+
+                        <TextBlock Text="E-mail" Foreground="#FF757575" Margin="0,0,0,5"/>
+                        <Border Background="Transparent" BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="5" Padding="2">
+                            <TextBox x:Name="emailUp" Background="Transparent" BorderThickness="0" Padding="5"/>
+                        </Border>
+
+                        <TextBlock Text="First Name" Foreground="#FF757575" Margin="0,0,0,5"/>
+                        <Border Background="Transparent" BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="5" Padding="2">
+                            <TextBox x:Name="FirstNameUp" Background="Transparent" BorderThickness="0" Padding="5"/>
+                        </Border>
+
+                        <TextBlock Text="Last Name" Foreground="#FF757575" Margin="0,0,0,5"/>
+                        <Border Background="Transparent" BorderBrush="#FFCCCCCC" BorderThickness="1" CornerRadius="5" Padding="2">
+                            <TextBox x:Name="LastNameUp" Background="Transparent" BorderThickness="0" Padding="5"/>
+                        </Border>
+
+                        <Button Content="Submit" Background="#FF3F51B5" Foreground="White" FontWeight="Bold" BorderThickness="0" Padding="10,5" Cursor="Hand" Click="SubmitSignUp" HorizontalAlignment="Center" Width="120" Margin="0,20,0,0">
+                            <Button.Style>
+                                <Style TargetType="Button">
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="Button">
+                                                <Border Background="{TemplateBinding Background}" CornerRadius="10" Padding="{TemplateBinding Padding}">
+                                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+                                </Style>
+                            </Button.Style>
+                        </Button>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </Popup>
+        <TextBlock HorizontalAlignment="Center" Margin="0,265,0,0" TextWrapping="Wrap" Text="Empowering Your Journey with Smarter Car Care" VerticalAlignment="Top" Height="48" Width="600" Foreground="White" FontSize="25" FontWeight="Bold" FontStyle="Italic"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,392,0,0" TextWrapping="Wrap" Text="Create an account or Sign in if you already have one to enjoy the app :)" VerticalAlignment="Top" Height="32" Width="387" Foreground="White"/>
+
+
+    </Grid>
+</Window>
