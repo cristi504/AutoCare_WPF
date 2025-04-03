@@ -24,7 +24,7 @@ namespace Autocare_WPF.data_access
         public static DataAccess Instance => _instance ??= new DataAccess();
 
 
-        private readonly static string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\limbaje (c#)\Autocare WPF\AutoCareDatabase.accdb";
+        private readonly static string connectionString = @"\Autocare WPF\AutoCareDatabase.accdb";
         public string CurrentUsername { get; private set; }
         public int CurrentUserID { get; private set; }
 
