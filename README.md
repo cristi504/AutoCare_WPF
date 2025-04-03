@@ -47,3 +47,4 @@ The application connects to an OBDII device via Bluetooth or USB.
 Real-time monitoring of engine parameters (e.g., RPM, temperature, fuel consumption).
 
 Reading and interpreting OBDII error codes to help diagnose issues.
+--Printscreens of the app windows are in the Screenshot Folder--
