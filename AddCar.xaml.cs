@@ -31,7 +31,7 @@ namespace Autocare_WPF
         private void LoadComboBoxData()
         {
 
-            string csvPath = @"D:\limbaje (c#)\Autocare WPF\2024.csv"; 
+            string csvPath = @"\Autocare WPF\2024.csv"; 
             LoadCarDataFromCSV(csvPath);
 
             // Load Brands dynamically from CSV
