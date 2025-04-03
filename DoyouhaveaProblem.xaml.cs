@@ -12,7 +12,7 @@ namespace Autocare_WPF
     public partial class DoyouhaveaProblem : Window
     {
         private string currentUsername = string.Empty;
-        private static readonly string apiKey = "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"; // cheie1
+        private static readonly string apiKey = "your_api_key"; // cheie1
         public DoyouhaveaProblem(string username)
         {
             InitializeComponent();
