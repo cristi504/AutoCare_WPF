@@ -211,28 +211,6 @@ namespace Autocare_WPF
                 MessageBox.Show($"An error occurred while loading the image: {ex.Message}");
             }
         }
-        //private void SaveImageToFile(byte[] imageBytes)
-        //{
-        //    if (imageBytes != null && imageBytes.Length > 0)
-        //    {
-        //        try
-        //        {
-
-        //            Debug.WriteLine($"Image Byte Length: {imageBytes.Length}");
-        //            string filePath = "D:/retrieved1_image.jpg";
-        //            File.WriteAllBytes(filePath, imageBytes);
-        //            MessageBox.Show($"Image saved to: {filePath}");
-        //        }
-        //        catch (Exception ex)
-        //        {
-        //            MessageBox.Show($"Error saving image: {ex.Message}");
-        //        }
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("No image data to save.");
-        //    }
-        //}
 
         private ImageSource GetImageFromByteArray(byte[] imageBytes)
         {

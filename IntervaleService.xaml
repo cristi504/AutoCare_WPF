@@ -65,6 +65,7 @@
 
 
         <ListView x:Name="ServiceListView" Margin="10,70,10,76" Background="Transparent" Foreground="White" BorderBrush="Transparent" Grid.Row="1">
+            
             <ListView.View >
                 <GridView>
                     <GridViewColumn Header="Oil" DisplayMemberBinding="{Binding Oil}" Width="100" />
@@ -90,7 +91,29 @@
                 <Style TargetType="ListViewItem">
                     <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
                     <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+
+                    <!-- Remove default selection/highlight effects -->
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Padding" Value="5"/>
+
+                    <Style.Triggers>
+                        <!-- Hover Effect -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Gray"/>
+                            <!-- Gold -->
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Trigger>
+
+                        <!-- Selected Item Effect -->
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="Gray"/>
+                            <!-- Orange -->
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </Style.Triggers>
                 </Style>
+                
             </ListView.ItemContainerStyle>
 
         </ListView>

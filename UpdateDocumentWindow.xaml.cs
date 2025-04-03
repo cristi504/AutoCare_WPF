@@ -31,22 +31,7 @@ namespace Autocare_WPF
             ExpiryDatePicker.DisplayDateStart = DateTime.Today;
         }
 
-        //private void UpdateButton_Click(object sender, RoutedEventArgs e)
-        //{
-        //    // Retrieve updated values
-        //    string documentType = (DocumentTypeComboBox.SelectedItem as ComboBoxItem)?.Content.ToString();
-        //    string series = SeriesTextBox.Text;
-        //    DateTime? issueDate = IssueDatePicker.SelectedDate;
-        //    DateTime? expiryDate = ExpiryDatePicker.SelectedDate;
-
-        //    if (string.IsNullOrEmpty(documentType) || string.IsNullOrEmpty(series) || issueDate == null || expiryDate == null)
-        //    {
-        //        MessageBox.Show("Please fill in all fields.");
-        //        return;
-        //    }
-
-        //    DataAccess.UpdateDocument(new UpdateDocument(documentType, series, issueDate, expiryDate, documentId));
-        //}
+        
         private void UpdateButton_Click(object sender, RoutedEventArgs e)
         {
             // Retrieve updated values

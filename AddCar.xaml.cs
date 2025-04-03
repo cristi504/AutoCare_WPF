@@ -8,6 +8,8 @@ using System.Xml.Serialization;
 using Autocare_WPF.domain.cars;
 using Autocare_WPF.data_access;
 using System.IO;
+using System.Text.RegularExpressions;
+using System.Windows.Input;
 
 namespace Autocare_WPF
 {
@@ -29,7 +31,7 @@ namespace Autocare_WPF
         private void LoadComboBoxData()
         {
 
-            string csvPath = @"D:\limbaje (c#)\Autocare WPF\2024.csv"; // Change this to your actual path
+            string csvPath = @"D:\limbaje (c#)\Autocare WPF\2024.csv"; 
             LoadCarDataFromCSV(csvPath);
 
             // Load Brands dynamically from CSV
@@ -138,6 +140,12 @@ namespace Autocare_WPF
 
             MileageComboBox.ItemsSource = new List<string> {"1000","5000", "10000","15000", "30000", "50000", "75000", "100000","125000","150000","175000","200000","250000","300000" };
             MileageComboBox.SelectedIndex = -1;
+
+        }
+        private void ComboBox_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            // Allow only numeric input
+            e.Handled = !Regex.IsMatch(e.Text, "^[0-9]*$");
         }
         private void LoadCarDataFromCSV(string filePath)
         {

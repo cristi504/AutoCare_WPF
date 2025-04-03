@@ -85,13 +85,13 @@
                 </TransformGroup>
             </TextBlock.RenderTransform>
         </TextBlock>
-        <DatePicker x:Name="IssueDatePicker" Grid.Row="4" Margin="122,25,272,25" Grid.Column="1" />
+        <DatePicker x:Name="IssueDatePicker" Grid.Row="4" Margin="122,25,272,150" Grid.Column="1" />
 
         <TextBlock Text="Expiry Date" Grid.Row="4" Grid.Column="1" VerticalAlignment="Top" Margin="250,65,384,0" Foreground="White"/>
-        <DatePicker x:Name="ExpiryDatePicker" Grid.Row="4" Margin="122,90,272,-40" Grid.Column="1" />
+        <DatePicker x:Name="ExpiryDatePicker" Grid.Row="4" Margin="122,90,272,81" Grid.Column="1" />
 
         <Button Content="Add Document" Grid.Row="4" Grid.Column="1"
-                HorizontalAlignment="Left" Margin="141,149,0,6" Click="AddDocumentButton_Click"
+                HorizontalAlignment="Left" Margin="132,148,0,7" Click="AddDocumentButton_Click"
                 Width="144" Height="NaN" Style="{StaticResource RoundedButtonStyle}"/>
         <Button x:Name="upload" Content="Upload Photo" HorizontalAlignment="Center" Margin="0,149,0,0" Grid.Row="4" VerticalAlignment="Top" Height="42" Width="141" Click="UploadPhotoButton_Click" Style="{StaticResource RoundedButtonStyle}" Grid.Column="1"/>
 

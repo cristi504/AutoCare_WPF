@@ -69,3 +69,4 @@ D:\limbaje (c#)\Autocare WPF\obj\Debug\net8.0-windows\StatusGeneral.g.cs
 D:\limbaje (c#)\Autocare WPF\obj\Debug\net8.0-windows\StatusGeneral.baml
 D:\limbaje (c#)\Autocare WPF\obj\Debug\net8.0-windows\PhotoWindow.g.cs
 D:\limbaje (c#)\Autocare WPF\obj\Debug\net8.0-windows\PhotoWindow.baml
+D:\limbaje (c#)\Autocare WPF\obj\Debug\net8.0-windows\Autocare WPF.sourcelink.json

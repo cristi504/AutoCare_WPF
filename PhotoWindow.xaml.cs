@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace Autocare_WPF
 {
-    /// <summary>
-    /// Interaction logic for PhotoWindow.xaml
-    /// </summary>
+  
     public partial class PhotoWindow : Window
     {
         public PhotoWindow(byte[] photoData)

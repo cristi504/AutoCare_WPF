@@ -3,64 +3,12 @@
   "WorkspaceRootPath": "D:\\limbaje (c#)\\Autocare WPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\carconnect.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:carconnect.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\updatedocumentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:updatedocumentwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\updatedocumentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:updatedocumentwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\domain\\documents\\updatedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:domain\\documents\\updatedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\data-access\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:data-access\\dataaccess.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\adddocumentxaml.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:adddocumentxaml.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\documente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:documente.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\domain\\documents\\storedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:domain\\documents\\storedocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\domain\\documents\\retrieveddocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:domain\\documents\\retrieveddocument.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\adddocumentxaml.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:adddocumentxaml.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\documente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:documente.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\photowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:photowindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\photowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:photowindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|d:\\limbaje (c#)\\autocare wpf\\intervaleservice.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{40CB3ED7-B65B-48F3-8DD5-E55B036BDDB4}|Autocare WPF.csproj|solutionrelative:intervaleservice.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,151 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CarConnect.xaml.cs",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\CarConnect.xaml.cs",
-              "RelativeDocumentMoniker": "CarConnect.xaml.cs",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\CarConnect.xaml.cs",
-              "RelativeToolTip": "CarConnect.xaml.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAADYAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T09:37:59.527Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateDocument.cs",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\domain\\documents\\UpdateDocument.cs",
-              "RelativeDocumentMoniker": "domain\\documents\\UpdateDocument.cs",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\domain\\documents\\UpdateDocument.cs",
-              "RelativeToolTip": "domain\\documents\\UpdateDocument.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T17:13:57.54Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateDocumentWindow.xaml",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\UpdateDocumentWindow.xaml",
-              "RelativeDocumentMoniker": "UpdateDocumentWindow.xaml",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\UpdateDocumentWindow.xaml",
-              "RelativeToolTip": "UpdateDocumentWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-29T17:11:28.927Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UpdateDocumentWindow.xaml.cs",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\UpdateDocumentWindow.xaml.cs",
-              "RelativeDocumentMoniker": "UpdateDocumentWindow.xaml.cs",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\UpdateDocumentWindow.xaml.cs",
-              "RelativeToolTip": "UpdateDocumentWindow.xaml.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAIwEUAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T17:09:49.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "StoreDocument.cs",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\domain\\documents\\StoreDocument.cs",
-              "RelativeDocumentMoniker": "domain\\documents\\StoreDocument.cs",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\domain\\documents\\StoreDocument.cs",
-              "RelativeToolTip": "domain\\documents\\StoreDocument.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T16:56:27.483Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AddDocumentxaml.xaml.cs",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\AddDocumentxaml.xaml.cs",
-              "RelativeDocumentMoniker": "AddDocumentxaml.xaml.cs",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\AddDocumentxaml.xaml.cs",
-              "RelativeToolTip": "AddDocumentxaml.xaml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAkwC4AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T13:22:17.299Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AddDocumentxaml.xaml",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\AddDocumentxaml.xaml",
-              "RelativeDocumentMoniker": "AddDocumentxaml.xaml",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\AddDocumentxaml.xaml",
-              "RelativeToolTip": "AddDocumentxaml.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-29T13:22:12.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RetrievedDocument.cs",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\domain\\documents\\RetrievedDocument.cs",
-              "RelativeDocumentMoniker": "domain\\documents\\RetrievedDocument.cs",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\domain\\documents\\RetrievedDocument.cs",
-              "RelativeToolTip": "domain\\documents\\RetrievedDocument.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAYwBwAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T16:55:53.488Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PhotoWindow.xaml.cs",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\PhotoWindow.xaml.cs",
-              "RelativeDocumentMoniker": "PhotoWindow.xaml.cs",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\PhotoWindow.xaml.cs",
-              "RelativeToolTip": "PhotoWindow.xaml.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAQwCAAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T16:53:38.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PhotoWindow.xaml",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\PhotoWindow.xaml",
-              "RelativeDocumentMoniker": "PhotoWindow.xaml",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\PhotoWindow.xaml",
-              "RelativeToolTip": "PhotoWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-28T16:53:13.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DataAccess.cs",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\data-access\\DataAccess.cs",
-              "RelativeDocumentMoniker": "data-access\\DataAccess.cs",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\data-access\\DataAccess.cs",
-              "RelativeToolTip": "data-access\\DataAccess.cs",
-              "ViewState": "AgIAAAACAAAAAAAAAAAAAAUCAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T16:28:09.366Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
               "Title": "Documente.xaml",
               "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\Documente.xaml",
               "RelativeDocumentMoniker": "Documente.xaml",
@@ -226,40 +34,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "Documente.xaml.cs",
               "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\Documente.xaml.cs",
               "RelativeDocumentMoniker": "Documente.xaml.cs",
               "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\Documente.xaml.cs",
               "RelativeToolTip": "Documente.xaml.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAgwAEBAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-25T17:26:01.071Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "IntervaleService.xaml.cs",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\IntervaleService.xaml.cs",
-              "RelativeDocumentMoniker": "IntervaleService.xaml.cs",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\IntervaleService.xaml.cs",
-              "RelativeToolTip": "IntervaleService.xaml.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAowFkAAABeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T17:25:02.361Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\limbaje (c#)\\Autocare WPF\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "D:\\limbaje (c#)\\Autocare WPF\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAowBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T17:23:21.832Z",
               "EditorCaption": ""
             }
           ]

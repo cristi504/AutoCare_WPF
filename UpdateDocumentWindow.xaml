@@ -69,7 +69,7 @@
         <DatePicker x:Name="ExpiryDatePicker" Margin="268,292,270,0" VerticalAlignment="Top" Height="30" Grid.ColumnSpan="2"/>
 
         <Button Content="Update" Width="158" Height="54" FontSize="16" 
-                HorizontalAlignment="Center" Margin="0,362,0,0" VerticalAlignment="Top"
+                HorizontalAlignment="Left" Margin="262,358,0,0" VerticalAlignment="Top"
                 Click="UpdateButton_Click"  Grid.Column="1"  Style="{StaticResource RoundedButtonStyle}" RenderTransformOrigin="0.5,0.5">
             <Button.RenderTransform>
                 <TransformGroup>
@@ -81,8 +81,8 @@
             </Button.RenderTransform>
         </Button>
         <Button x:Name="UpdatePhotoButton" Content="Update Photo"
-        HorizontalAlignment="Left" Margin="197,368,0,0"
-        VerticalAlignment="Top" Width="140" Click="UpdatePhotoButton_Click" Grid.ColumnSpan="2" Style="{StaticResource RoundedButtonStyle}"/>
+        HorizontalAlignment="Left" Margin="445,358,0,0"
+        VerticalAlignment="Top" Width="157" Click="UpdatePhotoButton_Click" Style="{StaticResource RoundedButtonStyle}" Height="54" Grid.Column="1"/>
 
 
     </Grid>

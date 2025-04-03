@@ -60,6 +60,32 @@
             </Rectangle.Fill>
         </Rectangle>
         <ListView x:Name="CarListView" Margin="0,0,0,154" Grid.Row="1" Background="Transparent" BorderBrush="Transparent" Foreground="White" >
+            <ListView.ItemContainerStyle>
+                <Style TargetType="ListViewItem">
+
+                    <!-- Remove default selection/highlight effects -->
+                    <Setter Property="Foreground" Value="White"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                    <Setter Property="Padding" Value="5"/>
+
+                    <Style.Triggers>
+                        <!-- Hover Effect -->
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="Gray"/>
+                            <!-- Gold -->
+                            <Setter Property="Foreground" Value="Black"/>
+                        </Trigger>
+
+                        <!-- Selected Item Effect -->
+                        <Trigger Property="IsSelected" Value="True">
+                            <Setter Property="Background" Value="Gray"/>
+                            <!-- Orange -->
+                            <Setter Property="Foreground" Value="White"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </ListView.ItemContainerStyle>
+
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Brand" DisplayMemberBinding="{Binding Brand}" Width="70" />
